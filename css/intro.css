@@ -1,0 +1,25 @@
+/* Hero / Intro Section */
+.hero { 
+  padding: 80px 0; 
+  position: relative; 
+  z-index: 1; 
+}
+
+.hero h1 { 
+  font-size: 42px; 
+  font-weight: 600; 
+}
+
+.hero img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4f46e5;
+}
+
+
+    /* Fullscreen Resume Modal */
+    .modal-fullscreen { width: 100%; height: 100%; max-width: 100%; max-height: 100%; margin: 0; }
+    .modal-fullscreen .modal-content { height: 100%; border-radius: 0; }
+    .modal-fullscreen iframe { height: 100%; }

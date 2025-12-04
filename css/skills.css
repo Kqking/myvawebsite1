@@ -1,0 +1,66 @@
+/* ------------------ Skills Cards ------------------ */
+#skills .card {
+  padding: 1.5rem;       /* Smaller padding for compact look */
+  border-radius: 1rem;   /* Slightly smaller rounding */
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#skills .card:hover {
+  transform: translateY(-5px); /* your original hover lift */
+  box-shadow: 0 6px 28px rgba(0,0,0,0.1); /* original shadow */
+}
+
+/* Card icons hover effect */
+#skills .card i {
+  transition: transform 0.3s, color 0.3s;
+}
+#skills .card:hover i {
+  transform: scale(1.2);
+  color: inherit !important; /* keep original color on hover */
+}
+
+/* Card content adjustments */
+#skills .card img {
+  width: 40px;   /* smaller icon */
+  height: 40px;  /* smaller icon */
+}
+
+#skills .card span {
+  font-size: 0.9rem;  /* slightly smaller text */
+}
+
+#skills .card ul li {
+  font-size: 0.85rem; /* smaller list items */
+}
+
+.skill-header {
+  font-size: 1.1rem;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 24px;
+  background-color: #ccc;
+}
+/* Column width adjustments for responsiveness */
+#skills .col-md-3 {
+  flex: 0 0 22%;       /* makes each card narrower on large screens */
+  max-width: 22%;
+}
+
+@media (max-width: 992px) {
+  #skills .col-md-3 {
+    flex: 0 0 45%;      /* adjust for tablets */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  #skills .col-6 {
+    flex: 0 0 90%;      /* full width for mobile */
+    max-width: 90%;
+  }
+}
+

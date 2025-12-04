@@ -1,0 +1,43 @@
+/* Contact Section Styles */
+#contact {
+  background: #f3f5f7;      /* light gray background */
+  padding: 40px 0;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+#contact h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#contact p, #contact li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#contact .contact-card {
+  background: #c1b1b1;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#contact .contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+#contact a {
+  color: #4f46e5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #1e40af;
+}
